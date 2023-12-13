@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     top: 0px;
-    background-color: #7396D3;
+    background-color: #2D4525;
     height: 50px;
     width: 100vw;
     min-width: 100vw;
@@ -13,11 +13,28 @@
     margin: 5px 5px 5px auto;
     display: inline-block;
     padding: 5px;
-    color: #FFFFFF;
+    color: #7C7979;
+    cursor: pointer;
 }
 
 .navbar__navLinkList {
     display: flex;
     margin-right: auto;
     list-style-type: none;
+
+    .navbar__navLink {
+        color: #FFFFFF;
+
+        &:hover {
+            color: #B7F3D5;
+        }
+
+        &:focus {}
+    }
+}
+
+.navbar__logo {
+    width: 30px;
+    height: 30px;
+    display: block;
 }

@@ -5,16 +5,24 @@ import './navbar.styles.scss';
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <a className="navbar__navLink">Home</a>
+            <a className="navbar__navLink">
+                <img src="../src/assets/images/logo.svg" alt="Logo" className="navbar__logo" />
+            </a>
             <ul className="navbar__navLinkList">
                 <li>
-                    <a href="" className="navbar__navLink">Shop</a>
+                    <a href="" className="navbar__navLink">
+                        Shop
+                    </a>
                 </li>
                 <li>
-                    <a href="" className="navbar__navLink">Categories</a>
+                    <a href="" className="navbar__navLink">
+                        Categories
+                    </a>
                 </li>
                 <li>
-                    <a href="" className="navbar__navLink">Contact</a>
+                    <a href="" className="navbar__navLink">
+                        Contact
+                    </a>
                 </li>
             </ul>
         </nav>
