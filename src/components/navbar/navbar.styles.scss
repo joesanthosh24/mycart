@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    top: 0px;
+    background-color: #7396D3;
+    height: 50px;
+    width: 100vw;
+    min-width: 100vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.navbar__navLink {
+    margin: 5px 5px 5px auto;
+    display: inline-block;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.navbar__navLinkList {
+    display: flex;
+    margin-right: auto;
+    list-style-type: none;
+}
