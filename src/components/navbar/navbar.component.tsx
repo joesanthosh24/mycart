@@ -1,28 +1,28 @@
-import React from 'react';
-import App_module from '../../App.module.scss';
+import { NavLink } from 'react-router-dom';
+
 import './navbar.styles.scss';
 
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <a className="navbar__navLink">
-                <img src="../src/assets/images/logo.svg" alt="Logo" className="navbar__logo" />
-            </a>
+            <NavLink className="navbar__navLink" to="/">
+                <img src="../src/assets/images/logo.svg" alt="Page Logo" className="navbar__logo" />
+            </NavLink>
             <ul className="navbar__navLinkList">
                 <li>
-                    <a href="" className="navbar__navLink">
+                    <NavLink to="/shopping" className="navbar__navLink">
                         Shop
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="" className="navbar__navLink">
+                    <NavLink to="/categories" className="navbar__navLink">
                         Categories
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="" className="navbar__navLink">
+                    <NavLink to="/contact" className="navbar__navLink">
                         Contact
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
         </nav>

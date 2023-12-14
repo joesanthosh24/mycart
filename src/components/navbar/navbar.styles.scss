@@ -31,10 +31,17 @@
 
         &:focus {}
     }
+
+    margin-left:0;
 }
 
 .navbar__logo {
     width: 30px;
     height: 30px;
-    display: block;
+    display: inline-block;
+    margin: 0 auto 0 0;
+}
+
+.imageLink {
+    text-decoration-line: none;
 }
