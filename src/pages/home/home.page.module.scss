@@ -23,21 +23,39 @@
         background-clip: border-box;
         background-color: transparent;
         width: 95%;
-        animation-duration: 0.5s;
+        animation-duration: 1s;
         animation-name: animate-pop;
         animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
 
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        border-radius: 15px;
+
         @keyframes animate-pop {
             0% {
-              opacity: 0;
-              transform: scale(0.5, 0.5);
+                opacity: 0;
+                transform: scale(0.01, 0.01);
             }
-          
+
+            10% {
+                opacity: 0.1;
+                transform: scale(0.1, 0.1);
+            }
+
+            60% {
+                opacity: 0.6
+            }
+
+            90% {
+                opacity: 0.9;
+            }
+
             100% {
-              opacity: 1;
-              transform: scale(1, 1);
+                opacity: 1;
+                transform: scale(1, 1);
             }
-          }
+        }
 
         .jumbotronContent {
             display: flex;
@@ -61,11 +79,16 @@
             }
         }
 
-        flex-direction:column;
-        align-items:center;
-        justify-items:center;
-        border-radius:15px;
     }
 
-    // padding:20px;
+    .homePage__products {
+        margin: 20px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: 'auto'; 
+        height: '500px';
+    }
 }

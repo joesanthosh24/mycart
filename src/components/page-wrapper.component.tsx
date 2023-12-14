@@ -2,10 +2,7 @@ import React, { useEffect } from 'react';
 
 import PageWrapperModule from './page-wrapper.module.scss';
 
-type PageProps = {
-    title: string;
-    children: React.ReactNode;
-};
+import { PageProps } from '../types';
 
 const PageWrapper: React.FC<PageProps> = ({ title, children }) => {
     useEffect(() => {
