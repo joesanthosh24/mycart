@@ -1,0 +1,71 @@
+.homePage {
+    background-repeat: repeat;
+    background-image: linear-gradient(180deg, #2D4525 0%, rgba(255, 255, 255, 0) 84%);
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+
+    .homePage__jumbotron {
+        height: 400px;
+        margin: 0px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(../../assets/images/jumbotron_macs.jpeg);
+        background-position: 50%;
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: padding-box;
+        background-clip: border-box;
+        background-color: transparent;
+        width: 95%;
+        animation-duration: 0.5s;
+        animation-name: animate-pop;
+        animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+
+        @keyframes animate-pop {
+            0% {
+              opacity: 0;
+              transform: scale(0.5, 0.5);
+            }
+          
+            100% {
+              opacity: 1;
+              transform: scale(1, 1);
+            }
+          }
+
+        .jumbotronContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            margin-top: 10%;
+            margin-bottom: auto;
+
+            div {
+                padding: 10px;
+                border: 1px solid #fff;
+                background-color: #fff;
+                margin-bottom: 25px;
+                border-radius: 90px;
+
+                h1 {
+                    color: #000;
+                    margin: 2px 8px;
+                }
+            }
+        }
+
+        flex-direction:column;
+        align-items:center;
+        justify-items:center;
+        border-radius:15px;
+    }
+
+    // padding:20px;
+}
