@@ -1,14 +1,12 @@
 .homePage {
     background-repeat: repeat;
-    background-image: linear-gradient(180deg, #2D4525 0%, rgba(255, 255, 255, 0) 84%);
+    background-image: linear-gradient(180deg, #2D4525 0%, rgba(122, 197, 134, 0.274) 84%);
     background-position: 50% 50%;
     background-size: 100% 100%;
     background-attachment: scroll;
     background-origin: padding-box;
     background-clip: border-box;
     background-color: transparent;
-    width: 100vw;
-    height: 100vh;
 
     .homePage__jumbotron {
         height: 400px;

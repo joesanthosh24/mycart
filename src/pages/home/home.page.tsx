@@ -45,7 +45,7 @@ const HomePage = () => {
                             key={name}
                             name={name}
                             price={price}
-                            imageUrl="../../assets/images/empty_image.png"
+                            imageUrl="empty_image.png"
                         />
                     )}
                 />
